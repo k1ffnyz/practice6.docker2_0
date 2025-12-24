@@ -60,16 +60,25 @@ docker build -t practice-image:1.0 .
 
 ## 🖼️ Скриншоты
 
-Вывод логов контейнера в файл
+# Вывод логов контейнера в файл
+Эта команда сохраняет логи контейнера в файл container_logs.txt.
+![container_logs](screenshots/container_logs.png)
 
-Просмотр статистики контейнера (docker stats)
+# Просмотр статистики контейнера (docker stats)
+Эта команда выводит информацию о текущем потреблении ресурсов контейнером.
+![container_stats](screenshots/container_stats.png)
 
-Запуск контейнера с ограничением ресурсов
+# Запуск контейнера с ограничением ресурсов
+Эта команда запускает контейнер с ограничениями по памяти (256MB) и процессорным времени (0.5 CPU).
+![resource_limitation](screenshots/resource_limitation.png)
 
-Экспорт контейнера в tar-архив
+# Экспорт контейнера в tar-архив
+Эта команда экспортирует контейнер в tar-архив.
+![container_export](screenshots/container_export.png)
 
-Импорт контейнера из tar-архива
-
+# Импорт контейнера из tar-архива
+Эта команда импортирует контейнер из tar-архива.
+![container_import](screenshots/container_import.png)
 
 ## ✔ Статус системы
 
