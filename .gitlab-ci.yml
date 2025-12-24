@@ -1,0 +1,20 @@
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  script:
+    - docker build -t practice-image:latest .
+
+test:
+  stage: test
+  script:
+    - docker run --rm practice-image:latest /bin/bash -c "pytest tests/"
+
+deploy:
+  stage: deploy
+  script:
+    - docker push practice-image:latest
+
